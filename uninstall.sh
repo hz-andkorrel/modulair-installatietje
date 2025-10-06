@@ -4,12 +4,12 @@
 source .env
 
 # Remove the docker images using the image names from the .env file
-printf "\nRemoving Docker images..."
+printf "\nRemoving Docker images...\n"
 docker rmi $FRONTEND_IMAGE_NAME
 docker rmi $BACKEND_IMAGE_NAME
 
 # Remove the cloned repositories using the directory names from the .env file
-printf "\nRemoving cloned repositories..."
+printf "\nRemoving cloned repositories...\n"
 rm -rf $FRONTEND_DIR
 rm -rf $BACKEND_DIR
 
